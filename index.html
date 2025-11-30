@@ -1,3 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tosha Express | Book Your Journey</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Tosha Express is Kenya's trusted logistics and parcel delivery company. Send and receive parcels quickly and safely.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpeg" href="/IMG-20251017-WA0016.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/styles.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+        <script type="application/ld+json">
+            {
+                  "@context": "https://schema.org",
+                    "@type": "Organization",
+                      "name": "Tosha Express",
+                          "url": "https://toshaexpress.co.ke",
+                          "logo": "https://toshaexpress.co.ke/IMG-20251017-WA0016.jpg",
+                                  "sameAs": [
+                                    "https://facebook.com/groups/759431013762321/",
+                                    ]
+            }
+            </script>
+
+        
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="py-3 navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <i class="bi bi-bus-front"></i> Tosha Express
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#routes">Routes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#why-choose">Why Choose Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-primary text-white ms-2 px-3" href="#booking-form">Book Now</a>
+                  </li>
+                </ul>            
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar End -->
+
+          <!-- Hero section -->
+          <section id="hero" class="hero-section">
+              <div class="hero-overlay">
+                  <div class="container">
+                      <div class="row align-items-center">
+                          <div class="col-lg-6">
+                              <h1 class="hero-title">Travel Comfortably,<br>Arrive Safely</h1>
+                              <p class="hero-subtitle">Book your bus tickets online with ease. Comfortable seats, reliable service, affordable prices.</p>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="booking-card" id="booking-form">
+                                  <h3 class="booking-title">Book Your Ticket</h3>
+                                  <form id="busBookingForm">
+                                      <div class="mb-3">
+                                          <label for="fromCity" class="form-label">From</label>
+                                          <select class="form-select" id="fromCity" required>
+                                              <option value="">Select departure city</option>
+                                              <option value="Nairobi">Nairobi</option>
+                                              <option value="Nakuru">Nakuru</option>
+                                              <option value="Eldoret">Eldoret</option>
+                                              <option value="Kakuma">Kakuma</option>
+                                              <option value="kitale">kitale</option>
+                                              <option value="lokichar">lokichar</option>
+                                              <option value="lokichogio">lokichogio</option>
+                                              <option value="lodwar">lodwar</option>
+                                          </select>
+                                      </div>
+                                      <div class="mb-3">
+                                          <label for="toCity" class="form-label">To</label>
+                                          <select class="form-select" id="toCity" required>
+                                              <option value="">Select destination city</option>
+                                              <option value="Nairobi">Nairobi</option>
+                                              <option value="Nakuru">Nakuru</option>
+                                              <option value="Eldoret">Eldoret</option>
+                                              <option value="Kakuma">Kakuma</option>
+                                              <option value="kitale">kitale</option>
+                                              <option value="lokichar">lokichar</option>
+                                              <option value="lokichogio">lokichogio</option>
+                                              <option value="lodwar">lodwar</option>
+                                              
+                                          </select>
+                                      </div>
+                                      <div class="mb-3">
+                                          <label for="travelDate" class="form-label">Travel Date</label>
+                                          <input type="date" class="form-control" id="travelDate" required>
+                                      </div>
+                                      <div class="mb-3">
+                                          <label for="passengers" class="form-label">Number of Passengers</label>
+                                          <input type="number" class="form-control" id="passengers" min="1" max="10" value="1" required>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary w-100 btn-lg">
+                                          <i class="bi bi-search"></i> Search Buses
+                                      </button>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+         <!-- Hero section ends here -->
+
+          <!-- Popular Routes Section -->
+          <section id="routes" class="routes-section">
+              <div class="container">
+                  <div class="text-center mb-5">
+                      <h2 class="section-title">Popular Routes</h2>
+                      <p class="section-subtitle">Choose from our most traveled destinations</p>
+                  </div>
+                  <div class="row cards">
+                      <div class="col-md-4 d-flex justify-content-center mb-4">
+                        <div class="card route-card">
+                            <img class="card-img-top" src="IMG-20251017-WA0019.jpg" alt="Bus route">
+                            <div class="card-body">
+                                <h5 class="card-title">Nairobi → kakuma</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> 9 hours | Starting from 3,500ksh</p>
+                                <p class="text-muted">Daily departures at 06:30 AM pickup at Kenyatta Bus Station</p>
+                                <button class="btn btn-outline-primary w-100" onclick="selectRoute('Nairobi', 'Kakuma')">Select Route</button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 d-flex justify-content-center mb-4">
+                        <div class="card route-card">
+                            <img class="card-img-top" src="IMG-20251017-WA0018.jpg" alt="Bus route">
+                            <div class="card-body">
+                                <h5 class="card-title">Nakuru → Kakuma</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> 8 hours | Starting from 3000ksh </p>
+                                <p class="text-muted">Daily departures at 05:45 AM, pickup at Nakuru Stage.</p>
+                                <button class="btn btn-outline-primary w-100" onclick="selectRoute('Nakuru', 'Kakuma')">Select Route</button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 d-flex justify-content-center mb-4">
+                        <div class="card route-card">
+                            <img class="card-img-top" src="IMG-20251017-WA0017.jpg" alt="Bus route">
+                            <div class="card-body">
+                                <h5 class="card-title">Eldoret  → Kakuma</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> 7 hours |Starting from  KSh 2,500</p>
+                                <p class="text-muted">Departs Eldoret at 04:30 AM, pickup at Eldoret Bus Park</p>
+                                <button class="btn btn-outline-primary w-100" onclick="selectRoute('Eldoret', 'Kakuma')">Select Route</button>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+           <!-- Why Choose Us -->
+          <section id="why-choose" class="why-choose-section">
+              <div class="container">
+                  <div class="row align-items-center">
+                      <div class="col-lg-6">
+                          <img class="img-fluid rounded shadow" src="IMG-20251017-WA0015.jpg" alt="Comfortable bus interior"/>
+                      </div>
+                      <div class="col-lg-6">
+                          <h2 class="section-title">Why Choose Tosha Express?</h2>
+                          <div class="feature-item">
+                              <h5><i class="bi bi-check-circle-fill text-primary"></i> Comfortable Seating</h5>
+                              <p>Spacious reclining seats with extra legroom for a relaxing journey.</p>
+                          </div>
+                          <div class="feature-item">
+                              <h5><i class="bi bi-check-circle-fill text-primary"></i> Safe & Reliable</h5>
+                              <p>Professional drivers, well-maintained buses, and excellent safety records.</p>
+                          </div>
+                          <div class="feature-item">
+                              <h5><i class="bi bi-check-circle-fill text-primary"></i> Affordable Prices</h5>
+                              <p>Best rates in the market with no hidden fees. What you see is what you pay.</p>
+                          </div>
+                          <div class="feature-item">
+                              <h5><i class="bi bi-check-circle-fill text-primary"></i> 24/7 Support</h5>
+                              <p>Our customer service team is always ready to assist you via WhatsApp.</p>
+                          </div>
+                    </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Contact Section -->
+          <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                      <h2 class="section-title text-white">Need Help? Contact Us</h2>
+                      <p class="text-white mb-4">Our customer support team is available 24/7 on WhatsApp</p>
+                      <div class="contact-info mb-4">
+<p class="text-white">
+    <i class="bi bi-telephone-fill"></i> Call Us: +254752 212 826 <br>
+    <i class="bi bi-facebook"></i> <a href="https://facebook.com/groups/759431013762321/" target="_blank" class="text-white text-decoration-none">Facebook Page</a>
+</p>
+                      </div>
+                      <a href="https://wa.me/254752212826?text=Hello%2C%20I%20need%20help%20with%20bus%20booking" 
+                         class="btn btn-success btn-lg" 
+                         target="_blank">
+                          <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+                      </a>
                     </div>
                 </div>
             </div>
